@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input">
+            <label for="todo">Todo Title:
+                <textarea rows="2" cols="50" id="todoTitle" type="text" placeholder="&#34 Do HomeWork &#34"></textarea>
+            </label>
+            <br>
+            <label for="todo">Todo Desc:
+                <textarea id="todoDesc" rows="5" cols="50" type="text" placeholder="&#34Article in Quantum Physics&#34"></textarea>
+            </label>
+            <br>
+            <button class="submit-todo" onclick="appendNewElement()">Add TODO</button>
+        </div>
+        <div class="line"></div>
+        <div class="output">
+            <div id="taskList">
+                <h3>Tasks</h3>
+                <div id="output"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
